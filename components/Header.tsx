@@ -28,13 +28,13 @@ const Header = (props) => {
                   <a className="nav-item">Login</a>
                 </Link>
             }
-            {
-              !isAuthentificated ? null :
-                <button className="nav-item" onClick={() => {
-                  logout()
-                }}>Logout</button>
-            }
           </nav>
+          {
+            !isAuthentificated ? null :
+              <button className="nav-item" onClick={() => {
+                logout()
+              }}>Logout</button>
+          }
           <Link href="/">
             <img className="logo" src="/static/img/batman-logo.png" alt="Logo" />
           </Link>

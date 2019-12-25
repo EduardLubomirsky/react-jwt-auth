@@ -1,6 +1,5 @@
 import Layout from '../components/Layout';
 import Link from 'next/link';
-import fetch from 'isomorphic-unfetch';
 import Card from '../components/Card';
 import Show from '../shared/interfaces/show.interface';
 import TvMaze from '../shared/api-helpers/tvmaze';
