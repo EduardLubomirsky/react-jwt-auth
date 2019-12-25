@@ -1,0 +1,154 @@
+// components
+@import "./components/card.scss";
+@import "./components/header.scss";
+// pages
+
+@import "./pages/about.scss";
+
+* {
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-wrapper {
+  padding: 20px;
+}
+
+.wrapper {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.card-wrapper {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: calc((100% / 4) - 15px);
+  margin: 0;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 0;
+
+  a {
+    width: 100%;
+    text-decoration: none;
+  }
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
+.post-wrapper {
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: 10px;
+  margin-top: 20px;
+  .post-content {
+    display: flex;
+    p {
+      margin: 0;
+      margin-left: 20px;
+    }
+  }
+}
+
+.login-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: calc(100vh - 135px);
+  display: flex;
+}
+
+.login,
+.register {
+  max-width: 340px;
+  width: 100%;
+  margin: 0 auto;
+  border: 3px solid #fed845;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 10px;
+}
+form {
+  display: flex;
+  flex-flow: column;
+  background: #c7c7c7;
+  border-radius: 7px;
+}
+
+.input-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  box-sizing: content-box;
+
+  label {
+    font-weight: 600;
+  }
+
+  input {
+    box-sizing: border-box;
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin: 0.3rem 0 1rem;
+    border: 3px solid #333333;
+    border-radius: 5px;
+  }
+}
+
+.btn-group {
+  width: 100%;
+  display: flex;
+
+  .btn {
+    width: 50%;
+    background: #fed845;
+    color: #333333;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &:first-child {
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      background: #333333;
+      border-bottom-left-radius: 5px;
+    }
+
+    &:hover {
+    }
+  }
+}
+
+.error {
+  margin: 0.5rem 0 0;
+  display: none;
+  color: brown;
+}
+.error.show {
+  display: block;
+}

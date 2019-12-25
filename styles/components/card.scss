@@ -1,0 +1,26 @@
+.card {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex-shrink: 0;
+  background: #e4e4e4;
+  color: black;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px solid #fed845;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s;
+  
+  &-image {
+    object-fit: contain;
+  }
+
+  &:hover {
+    border: 3px solid #fed845;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+}
